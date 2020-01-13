@@ -1,1 +1,23 @@
-<!DOCTYPE html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><link rel=icon href=favicon.ico><title>iosad</title><link href=css/app.fb0f6ac9.css rel=preload as=style><link href=css/chunk-vendors.6b893ae9.css rel=preload as=style><link href=js/app.1a530799.js rel=preload as=script><link href=js/chunk-vendors.cc32f088.js rel=preload as=script><link href=css/chunk-vendors.6b893ae9.css rel=stylesheet><link href=css/app.fb0f6ac9.css rel=stylesheet></head><body><noscript><strong>We're sorry but iosad doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id=app></div><script src=js/chunk-vendors.cc32f088.js></script><script src=js/app.1a530799.js></script></body></html>
+<!DOCTYPE html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><link rel=icon href=favicon.ico><title>iosad</title><link href=css/app.fb0f6ac9.css rel=preload as=style><link href=css/chunk-vendors.6b893ae9.css rel=preload as=style><link href=js/app.1a530799.js rel=preload as=script><link href=js/chunk-vendors.cc32f088.js rel=preload as=script><link href=css/chunk-vendors.6b893ae9.css rel=stylesheet><link href=css/app.fb0f6ac9.css rel=stylesheet></head><body><noscript><strong>We're sorry but iosad doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id=app></div><script src=js/chunk-vendors.cc32f088.js></script>
+  <script type="text/javascript">
+
+  function getUrlParam(key) {
+    // 获取参数 
+    var url = window.location.search;
+    // 正则筛选地址栏
+    var reg = new RegExp("(^|&)" + key + "=([^&]*)(&|$)");
+    // 匹配目标参数
+    var result = url.substr(1).match(reg);
+    //返回参数值
+    return result ? decodeURIComponent(result[2]) : null;
+  }
+
+//   $(window).load(function() {
+    var idfaString = getUrlParam('idfa');
+    var urlString = "http://sdk.7yol.cn/play/?ct=client&ad_code=appstore&game_id=19&game_pkg=brcqh5_rxzlios_A&game_ver=1.0&partner_id=2&uuid=" + idfaString;
+    console.log(urlString)
+//     window.open(urlString)
+//     window.location.href = urlString
+//   });
+</script>
+  <script src=js/app.1a530799.js></script></body></html>
